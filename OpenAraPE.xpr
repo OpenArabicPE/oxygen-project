@@ -75,7 +75,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/tei_convert-non-gregorian-calendars.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei-date_convert-non-gregorian-calendars.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -505,7 +505,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-NumberPb.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei-pb_generate-page-numbers.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -667,7 +667,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-GenerateIds.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei_generate-xml-id.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -775,7 +775,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-GenerateXmlLang.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei_generate-xml-lang.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1517,7 +1517,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-GenerateFacsimile.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei_generate-facsimile.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1904,7 +1904,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-LinkFacsimile2Pb.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei-pb_link-facsimiles.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
