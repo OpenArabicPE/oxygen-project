@@ -10,9 +10,18 @@ This repository contains an Oxygen project file (.xpr) to be used in the Oxygen 
 
 In order to run the transformations, this repository and the OpenAraPE repositories it depends on, such as [convert_tei-to-mods](https://github.com/OpenAraPE/convert_tei-to-mods) and [convert_tei-to-bibtex](https://github.com/OpenAraPE/convert_tei-to-bibtex), must be saved in the same folder:
 
-- folder
-    + sub-folder: oxygen-project
-    + sub-folder: convert_tei-to-bibtex
-    + sub-folder: convert_tei-to-mods
-    + sub-folder: ...
+- some-local-folder/
+    + [oxygen-project](https://github.com/OpenAraPE/oxygen-project)/
+        * OpenAraPE.xpr
+        * LICENSE.md
+        * README.md
+    + [convert_tei-to-bibtex](https://github.com/OpenAraPE/convert_tei-to-bibtex)/
+        * xslt/
+        * LICENSE.md
+        * ...
+    + [convert_tei-to-mods](https://github.com/OpenAraPE/convert_tei-to-mods)/
+        * xslt/
+        * ...
+    + [tools](https://github.com/OpenAraPE/tools)/
+    + ...
 
