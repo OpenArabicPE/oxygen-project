@@ -947,7 +947,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-bibtex/xslt/Tei2BibTex-articles.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-bibtex/xslt/Tei2BibTex-articles.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1033,7 +1033,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-bibtex/xslt/Tei2BibTex-issues.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-bibtex/xslt/Tei2BibTex-issues.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1119,7 +1119,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-mods/xslt/Tei2mods-articles.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-mods/xslt/Tei2mods-articles.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1205,7 +1205,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-mods/xslt/Tei2mods-issues.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-mods/xslt/Tei2mods-issues.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1291,7 +1291,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-mods/xslt/Tei2Mods-bibl.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-mods/xslt/Tei2Mods-bibl.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1732,7 +1732,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-markdown/xslt/Tei2Md-articles.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-markdown/xslt/Tei2Md-articles.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -1818,7 +1818,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/convert_tei-to-markdown/xslt/Tei2Md.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-markdown/xslt/Tei2Md.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
