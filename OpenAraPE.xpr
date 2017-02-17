@@ -1818,7 +1818,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/../convert_tei-to-markdown/xslt/Tei2Md.xsl</String>
+                                    <String>${pdu}/../convert_tei-to-markdown/xslt/Tei2Md-issues.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
