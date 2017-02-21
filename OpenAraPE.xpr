@@ -583,7 +583,7 @@
                                             <field name="paramDescription">
                                                 <paramDescriptor>
                                                     <field name="localName">
-                                                        <String>pEditor</String>
+                                                        <String>p_id-editor</String>
                                                     </field>
                                                     <field name="prefix">
                                                         <null/>
@@ -2026,7 +2026,7 @@
                                             <field name="paramDescription">
                                                 <paramDescriptor>
                                                     <field name="localName">
-                                                        <String>pAuthorXmlId</String>
+                                                        <String>p_id-editor</String>
                                                     </field>
                                                     <field name="prefix">
                                                         <null/>
