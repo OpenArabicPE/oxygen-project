@@ -50,6 +50,28 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../digital-muqtabas/xml/oclc_4770057679-i_42.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>TEI: generate MODS - one file per article</String>
+                                        <String>TEI: generate MODS - one file per issue</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
                         <String>scenarios</String>
                         <scenario-array>
                             <scenario>
@@ -2967,7 +2989,7 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="OpenAraPE.xpr">
+    <projectTree name="OpenArabicPE.xpr">
         <folder name="Editions">
             <folder path="../digital-haqaiq/"/>
             <folder path="../digital-hilal/"/>
@@ -2975,7 +2997,7 @@
             <folder path="../digital-muqtabas/"/>
         </folder>
         <folder name="ODD">
-            <folder path="../OpenAraPE_ODD/"/>
+            <folder path="../OpenArabicPE_ODD/"/>
         </folder>
         <folder name="XSLT">
             <folder path="../convert_sakhrit-to-tei/"/>
