@@ -399,7 +399,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/Tei-ClearUpList.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei_correct-list-table.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -2520,7 +2520,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}../tools/xslt/tei_mark-up-numbers-digits.xsl</String>
+                                    <String>${pdu}/../tools/xslt/tei_mark-up-numbers-digits.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
