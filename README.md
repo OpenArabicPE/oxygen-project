@@ -22,6 +22,8 @@ In order to run the transformations, this repository and the OpenArabicPE reposi
     + [convert_tei-to-mods](https://github.com/OpenArabicPE/convert_tei-to-mods)/
         * xslt/
         * ...
+    + [convert_tei-to-markdown](https://github.com/OpenArabicPE/convert_tei-to-markdown)/
     + [tools](https://github.com/OpenArabicPE/tools)/
+    + [authority-files](https://github.com/OpenArabicPE/authority-files)/
     + ...
 
