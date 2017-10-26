@@ -54,11 +54,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../generate_metadata-through-iteration/xml/_output/input_al-quds.TEIP5.xml</String>
+                                    <String>../generate_metadata-through-iteration/xml/input_thamarat-al-funun.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>TEI: generate MODS for all &lt;bibl> in this file</String>
+                                        <String>TEI: generate bibliographic metadata through iteration</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -74,6 +74,21 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>TEI: generate bibliographic metadata through iteration</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../generate_metadata-through-iteration/xml/_output/input_al-quds.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>TEI: generate MODS for all &lt;bibl> in this file</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
