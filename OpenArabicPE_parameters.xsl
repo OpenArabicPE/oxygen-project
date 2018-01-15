@@ -12,4 +12,7 @@
     <!-- toggle debugging (not available in all stylesheets) -->
     <xsl:param name="p_verbose" select="false()"/>
     
+    <!-- generate an id for the most recent change -->
+    <xsl:param name="p_id-change" select="concat(generate-id(//tei:change[1]),'x')"/>
+    
 </xsl:stylesheet>
