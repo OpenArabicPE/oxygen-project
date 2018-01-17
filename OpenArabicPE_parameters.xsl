@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="xs xsi"
     version="2.0">
     
     <!-- identify the author of the change by means of a @xml:id -->
@@ -13,6 +13,6 @@
     <xsl:param name="p_verbose" select="false()"/>
     
     <!-- generate an id for the most recent change -->
-    <xsl:param name="p_id-change" select="concat(generate-id(//tei:change[1]),'x')"/>
+    <xsl:param name="p_id-change" select="generate-id(//tei:change[last()])"/>
     
 </xsl:stylesheet>
