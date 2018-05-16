@@ -2207,7 +2207,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate md - one file per article</String>
+                                    <String>TEI: generate MarkDown - one file per article</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -2293,7 +2293,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate md - one file per issue</String>
+                                    <String>TEI: generate MarkDown - one file per issue</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
