@@ -3555,7 +3555,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/../authority-files/xslt/tei_extract-placename.xsl</String>
+                                    <String>${pdu}/../authority-files/xslt/tei_extract-and-mark-up-placeName.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
