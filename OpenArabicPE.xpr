@@ -91,7 +91,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../authority-files/tei/entities_master.TEIP5.xml</String>
+                                    <String>../authority-files/data/tei/entities_master.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -100,23 +100,6 @@
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>../digital-muqtabas/xml/oclc_4770057679-i_42.TEIP5.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>TEI: generate MODS - one file per article</String>
-                                        <String>TEI: generate MODS - one file per issue</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
@@ -168,41 +151,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../generate_metadata-through-iteration/xml/_output/input_al-quds.TEIP5.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>TEI: generate MODS for all &lt;bibl> in this file</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>../generate_metadata-through-iteration/xml/input_thamarat-al-funun.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>TEI: generate bibliographic metadata through iteration</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>../analytical-playground/metadata/visualization/Untitled3.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tei_extract-bylines-stub</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
