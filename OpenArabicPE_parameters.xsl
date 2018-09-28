@@ -20,5 +20,7 @@
     
     <!-- generate an id for the most recent change -->
     <xsl:param name="p_id-change" select="generate-id(//tei:change[last()])"/>
+    <!-- ID for the standard print edition -->
+    <xsl:param name="p_id-print-edition" select="'#edition_1'"/>
     
 </xsl:stylesheet>
