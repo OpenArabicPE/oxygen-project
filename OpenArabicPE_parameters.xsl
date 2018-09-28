@@ -4,10 +4,16 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     exclude-result-prefixes="xs xsi"
-    version="2.0">
+    version="3.0">
     
     <!-- identify the author of the change by means of a @xml:id -->
     <xsl:param name="p_id-editor" select="'pers_TG'"/>
+    <xsl:param name="p_editor">
+        <tei:respStmt xml:lang="en">
+            <tei:resp>TEI edition</tei:resp>
+            <tei:persName xml:id="pers_TG"><tei:forename>Till</tei:forename> <tei:surname>Grallert</tei:surname></tei:persName>
+        </tei:respStmt>
+    </xsl:param>
     
     <!-- toggle debugging (not available in all stylesheets) -->
     <xsl:param name="p_verbose" select="false()"/>
