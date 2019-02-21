@@ -112,11 +112,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../generate_metadata-through-iteration/xml/input_al-jinan.TEIP5.xml</String>
+                                    <String>../authority-files/data/tei/personography_OpenArabicPE.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>TEI: generate bibliographic metadata through iteration</String>
+                                        <String>authority file(s): improve personography</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -127,11 +127,26 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../authority-files/data/tei/personography_OpenArabicPE.TEIP5.xml</String>
+                                    <String>../authority-files/xslt/Untitled1.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>authority file(s): improve personography</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../generate_metadata-through-iteration/xml/input_al-jinan.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>TEI: generate bibliographic metadata through iteration</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -821,50 +836,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_file-hathi</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>false()</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>true</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_image-setoff_eap</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>2</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                    </list>
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -1387,6 +1359,92 @@
                                 </field>
                                 <field name="inputXSLURL">
                                     <String>${pdu}/../convert_tei-to-bibtex/xslt/Tei2BibTex-issues.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>TEI: generate CSV for all &lt;biblStruct> in this file</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../tools/xslt/convert_tei-biblstruct-to-csv.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -3746,7 +3804,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>authority file(s): link persNames to personography</String>
+                                    <String>authority file(s): link persNames to prosopography</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -4624,92 +4682,6 @@
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>TEI: generate CSV for all &lt;biblStruct> in this file</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/../tools/xslt/convert_tei-biblstruct-to-csv.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
