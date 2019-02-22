@@ -556,29 +556,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_id-editor</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>${ask('Specify the @xml:id of the current editor', string, 'pers_TG')}</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                    </list>
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -4717,6 +4695,7 @@
             <folder path="../digital-manar/"/>
             <folder path="../digital-mawaqif/"/>
             <folder path="../digital-muqtabas/"/>
+            <folder path="../journal_al-hasna/"/>
             <folder path="../journal_al-jinan/"/>
             <folder path="../newspaper_thamarat-al-funun/"/>
             <folder path="../../TEI/oclc_213913824/"/>
