@@ -371,7 +371,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>TEI: generate MODS for all &lt;bibl> in this file</String>
+                                        <String>bibliographic data: generate MODS for all &lt;bibl> in this file</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -552,6 +552,92 @@
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>TEI: add additional sets of facsimiles</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../tools/xslt/tei_add-additional-facsimiles.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <File>${cfd}/_output/facs-additional/${cfne}</File>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/facs-additional/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -1450,7 +1536,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate BibTeX - one file per article</String>
+                                    <String>bibliographic data: generate BibTeX - one file per article</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -1536,7 +1622,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate BibTeX - one file per issue</String>
+                                    <String>bibliographic data: generate BibTeX - one file per issue</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -1708,7 +1794,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate MODS - one file per article</String>
+                                    <String>bibliographic data: generate MODS - one file per article</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -1794,7 +1880,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate MODS - one file per issue</String>
+                                    <String>bibliographic data: generate MODS - one file per issue</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -1880,7 +1966,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>TEI: generate MODS for all &lt;bibl> in this file</String>
+                                    <String>bibliographic data: generate MODS for all &lt;bibl> in this file</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -5264,92 +5350,6 @@
                                     <String-array/>
                                 </field>
                             </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>TEI: add additional sets of facsimiles</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/../tools/xslt/tei_add-additional-facsimiles.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>${cfd}/_output/facs-additional/${cfne}</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${cfd}/_output/facs-additional/${cfne}</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
                         </scenario-array>
                     </entry>
                     <entry>
@@ -5386,6 +5386,7 @@
             <folder path="../newspaper_al-asr-al-jadid/"/>
             <folder path="../newspaper_al-ittihad-al-uthmani/"/>
             <folder path="../newspaper_thamarat-al-funun/"/>
+            <folder path="../../TEI/kanun-i-esasi/"/>
             <folder path="../../TEI/oclc_165855925/"/>
             <folder path="../../TEI/oclc_213913824/"/>
             <folder path="../../TEI/oclc_618896732/"/>
