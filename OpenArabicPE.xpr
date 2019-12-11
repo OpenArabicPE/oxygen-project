@@ -62,6 +62,10 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>bidi.support</String>
+                        <Integer>0</Integer>
+                    </entry>
+                    <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array/>
                     </entry>
