@@ -389,6 +389,10 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>editor.line.width</String>
+                        <Integer>200</Integer>
+                    </entry>
+                    <entry>
                         <String>editor.longest.line.limit.v12</String>
                         <Integer>5000</Integer>
                     </entry>
