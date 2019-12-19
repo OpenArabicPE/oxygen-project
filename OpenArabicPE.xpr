@@ -306,14 +306,6 @@
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>6/xliff/xliff_2.1.framework/XLIFF 2.1</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/samples/application_form.framework/Application Form (Sample)</String>
                                 </field>
                                 <field name="enable">
@@ -1170,7 +1162,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -1253,7 +1245,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -1730,7 +1722,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -1860,7 +1852,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -1870,7 +1862,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -2025,7 +2017,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -2284,7 +2276,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -2414,7 +2406,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -2580,7 +2572,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -2590,7 +2582,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -2720,7 +2712,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -2730,7 +2722,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -2860,7 +2852,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -2943,7 +2935,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3026,7 +3018,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3036,7 +3028,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -3166,7 +3158,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3176,7 +3168,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -3306,7 +3298,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3389,7 +3381,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3472,7 +3464,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3555,7 +3547,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -3995,7 +3987,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -4078,7 +4070,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -4186,7 +4178,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -5101,7 +5093,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -5231,7 +5223,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -5720,7 +5712,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -5924,7 +5916,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -6162,7 +6154,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -6292,7 +6284,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -6375,7 +6367,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -6458,7 +6450,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -6541,7 +6533,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -6731,7 +6723,7 @@
                                 <field name="advancedOptionsMap">
                                     <serializableOrderedMap>
                                         <entry>
-                                            <String>Saxon-PE</String>
+                                            <String>Saxon-EE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
                                                     <Boolean>true</Boolean>
@@ -6861,7 +6853,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
