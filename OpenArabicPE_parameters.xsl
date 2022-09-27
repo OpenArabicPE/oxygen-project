@@ -18,10 +18,10 @@
     </xsl:param>
     
     <!-- toggle debugging (not available in all stylesheets) -->
-    <xsl:param name="p_verbose" select="false()"/>
+    <xsl:param name="p_verbose" select="true()"/>
     
     <!-- generate an id for the most recent change -->
-    <xsl:param name="p_id-change" select="generate-id(//tei:change[last()])"/>
+    <xsl:param name="p_id-change" select="generate-id(//tei:revisionDesc[1]/tei:change[last()])"/>
     <!-- ID for the standard print edition -->
     <xsl:param name="p_id-print-edition" select="'#edition_1'"/>
     
@@ -30,11 +30,14 @@
     <!-- output: xml:id as string -->
     <xsl:function name="oape:generate-xml-id">
         <xsl:param name="p_node"/>
-        <xsl:if test="$p_verbose = true()">
+       <!-- <xsl:if test="$p_debug = true()">
             <xsl:message>
-                <xsl:copy-of select="$p_node"/>
+                <xsl:text>oape:generate-xml-id</xsl:text>
             </xsl:message>
-        </xsl:if>
+            <xsl:message>
+                <xsl:text>Input: </xsl:text><xsl:copy-of select="$p_node"/>
+            </xsl:message>
+        </xsl:if>-->
         <!--<xsl:variable name="v_element-name"
             select="
                 if(starts-with(name($p_node), 'tei:')) 
@@ -44,13 +47,13 @@
             select="$p_node/descendant-or-self::node()[1]/name()"/>
         <xsl:variable name="v_element-name" select=" replace($v_element-name, 'tei:', '')"/>
         <xsl:variable name="v_position" select="count($p_node/preceding::node()[name() = $v_element-name])"/>
-        <xsl:if test="$p_verbose = true()">
+        <!--<xsl:if test="$p_verbose = true()">
             <xsl:message>
                 <xsl:value-of select="$v_element-name"/>
                 <xsl:text> at position </xsl:text>
                 <xsl:value-of select="$v_position"/>
             </xsl:message>
-        </xsl:if>
+        </xsl:if>-->
         <xsl:value-of select="concat($v_element-name, '_', $v_position + 1, '.', generate-id($p_node))"/>
     </xsl:function>
     
