@@ -382,6 +382,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.editor.document.checking.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -2619,6 +2623,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -2642,9 +2649,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -2765,6 +2769,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -2788,9 +2795,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -3520,6 +3524,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -3543,9 +3550,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -3666,6 +3670,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -3689,9 +3696,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -4003,6 +4007,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -4026,9 +4033,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -4340,6 +4344,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -4363,9 +4370,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -4486,6 +4490,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -4509,9 +4516,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -4798,6 +4802,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -4821,9 +4828,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -5027,6 +5031,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -5050,9 +5057,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -10752,6 +10756,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -10775,9 +10782,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -12480,6 +12484,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -12503,9 +12510,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -13427,6 +13431,9 @@
                                                 <field name="enableAssertions">
                                                     <Boolean>false</Boolean>
                                                 </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
                                                 <field name="showVersionWarnings">
                                                     <Boolean>false</Boolean>
                                                 </field>
@@ -13450,9 +13457,6 @@
                                                 </field>
                                                 <field name="expandAttributeDefaults">
                                                     <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
                                                 </field>
                                                 <field name="stripWS">
                                                     <String>saxon.strip.ws.none</String>
@@ -13563,6 +13567,14 @@
                     <entry>
                         <String>show.large.document.load.info</String>
                         <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>validate.as.you.type</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>validate.auto.delay</String>
+                        <Integer>3</Integer>
                     </entry>
                     <entry>
                         <String>validation.base.uri.fixup</String>
