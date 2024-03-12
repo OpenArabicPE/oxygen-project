@@ -16,6 +16,7 @@
             <tei:persName xml:id="pers_TG"><tei:forename>Till</tei:forename> <tei:surname>Grallert</tei:surname></tei:persName>
         </tei:respStmt>
     </xsl:param>
+    <xsl:param name="p_today-iso" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
     
     <!-- toggle debugging (not available in all stylesheets) -->
     <xsl:param name="p_verbose" select="true()"/>
