@@ -327,6 +327,8 @@
                             <String>xd:pre</String>
                             <String>tei:persName</String>
                             <String>tei:placeName</String>
+                            <String>tei:bibl</String>
+                            <String>tei:biblStruct</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -442,11 +444,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../authority-files/data/tei/bibliography_OpenArabicPE-periodicals.TEIP5.xml</String>
+                                    <String>../convert_tei-to-bibliographic-data/example-data/MARC/zdb_arabic-periodicals_example.mrcx</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>authority file(s): improve bibliography</String>
+                                        <String>bibliographic data: convert MARC XML to &lt;tei:biblStruct></String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -462,11 +464,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../Sihafa/sihafa_data/bibliographic-data/hathi_jinan.TEIP5.xml</String>
+                                    <String>../authority-files/data/tei/bibliography_OpenArabicPE-periodicals.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>authority file(s): merge local information into bibliography</String>
+                                        <String>authority file(s): improve bibliography</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -502,11 +504,123 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../Sihafa/sihafa_data/bibliographic-data/aub_serials-until-1929.TEIP5.xml</String>
+                                    <String>../authority-files/data/test-data/test_linking-to-authority-files.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>authority file(s): merge local information into bibliography</String>
+                                        <String>authority file(s): link periodical titles to bibliography</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../authority-files/data/tei/bibliography_OpenArabicPE-periodicals_simple.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>authority files(s): convert TEI to custom Wikidata XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../convert_tei-to-bibliographic-data/xslt/convert_tei-to-biblstruct_bibl.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>bibliographic data: convert/extract to standOff/listBibl/biblStruct</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../OpenArabicPE_ODD/schema/tei_periodical.odd</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>6/tei/teip5odd.framework/TEI ODD/TEI ODD to RELAX NG XML</String>
+                                        <String>6/tei/teip5odd.framework/TEI ODD/TEI ODD to XML Schema</String>
+                                        <String>6/tei/teip5odd.framework/TEI ODD/TEI ODD to RELAX NG Compact</String>
+                                        <String>6/tei/teip5odd.framework/TEI ODD/TEI ODD to DTD</String>
+                                        <String>6/tei/teip5odd.framework/TEI ODD/TEI ODD XHTML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>ANT</String>
+                                        <String>ANT</String>
+                                        <String>ANT</String>
+                                        <String>ANT</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../journal_al-muqtabas/tei/oclc_4770057679-i_6.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>TEI: split into files along body//div</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../authority-files/xslt/tei-bibl_extract.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>authority file(s): extract referenced works</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -542,7 +656,96 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../convert_tei-to-bibliographic-data/example-data/debugging/input.TEIP5.xml</String>
+                                    <String>../convert_tei-to-bibliographic-data/example-data/tei/zfdg/2024_004_Sittel_QSA_v1_0.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>bibliographic data: generate biblStruct from fileDesc</String>
+                                        <String>bibliographic data: generate MODS from fileDesc</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../convert_tei-to-bibliographic-data/example-data/tei/dhq/000019.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>bibliographic data: generate biblStruct from fileDesc</String>
+                                        <String>bibliographic data: generate MODS from fileDesc</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../convert_tei-to-bibliographic-data/example-data/tei/dhq/000123.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>bibliographic data: generate biblStruct from fileDesc</String>
+                                        <String>bibliographic data: generate MODS from fileDesc</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../authority-files/data/tei/personography_OpenArabicPE.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>authority file(s): improve personography</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../../Sihafa/sihafa_data/bibliographic-data/hathi_jinan.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -562,11 +765,31 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../authority-files/data/tei/personography_OpenArabicPE.TEIP5.xml</String>
+                                    <String>../../Sihafa/sihafa_data/bibliographic-data/aub_serials-until-1929.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>authority file(s): improve personography</String>
+                                        <String>authority file(s): merge local information into bibliography</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../convert_tei-to-bibliographic-data/example-data/debugging/input.TEIP5.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>authority file(s): merge local information into bibliography</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -602,51 +825,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../convert_tei-to-bibliographic-data/xslt/convert_tei-to-biblstruct_bibl.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>bibliographic data: convert &lt;bibl> to &lt;biblStruct></String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>../convert_tei-to-bibliographic-data/example-data/aub_serials-until-1929.mrcx</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>bibliographic data: convert MARC XML to &lt;tei:biblStruct></String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>../journal_al-muqtabas/tei/oclc_4770057679-i_6.TEIP5.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>TEI: split into files along body//div</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -682,51 +865,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../authority-files/data/test-data/test_linking-to-authority-files.TEIP5.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>authority file(s): link periodical titles to bibliography</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>../authority-files/data/test-data/test_personography.TEIP5.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>add mark-up: references to periodicals</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>../authority-files/xslt/tei-bibl_extract.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>authority file(s): extract referenced works</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -2897,6 +3040,89 @@
                                     <null/>
                                 </field>
                                 <field name="name">
+                                    <String>TEI: break into pages</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../tools/xslt/breakByMilestone.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
                                     <String>TEI: correct biblStruct, biblScope</String>
                                 </field>
                                 <field name="baseURL">
@@ -3252,7 +3478,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>false()</String>
+                                                <String>true()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -3324,7 +3550,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>true()</String>
+                                                <String>false()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -3352,6 +3578,54 @@
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_hathi-id</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'hvd.32044093672442'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_image-setoff_hathi</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>20</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
                                             </field>
                                             <field name="isStatic">
                                                 <Boolean>false</Boolean>
@@ -5242,6 +5516,162 @@
                                     <null/>
                                 </field>
                                 <field name="name">
+                                    <String>add mark-up: flatten mixed content with milestones (&lt;seg>)</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../tools/xslt/tei_mixed-content-milestones.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/markup_mixed-content/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
                                     <String>add mark-up: references to people</String>
                                 </field>
                                 <field name="baseURL">
@@ -5992,7 +6422,162 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_month-synchronisation-gregorian-ottoman-fiscal-in-1917</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_ottoman-fiscal-last-year</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>1360</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
                                     </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>al-Manār: post-process</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${cfdu}/../xslt/post-process_manar.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/processed/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -6173,89 +6758,6 @@
                                             </field>
                                         </transformationParameter>
                                     </list>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>authority file(s): extract &lt;title level=j"></String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/../authority-files/xslt/tei-title_extract-new-ones.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${cfd}/_output/title/${cfne}</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -7240,89 +7742,6 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>authority file(s): improve holdings in bibliography</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/../authority-files/xslt/tei-biblstruct_correct-holdings.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${cfd}/_output/holdings_improved/${cfne}</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
                                     <String>authority file(s): improve list of organizations</String>
                                 </field>
                                 <field name="baseURL">
@@ -7849,7 +8268,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>false()</String>
+                                                <String>true()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -7873,7 +8292,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>true()</String>
+                                                <String>false()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -7921,7 +8340,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>true()</String>
+                                                <String>false()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -7936,7 +8355,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-HE</String>
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -8365,7 +8784,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>true()</String>
+                                                <String>false()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -8390,6 +8809,54 @@
                                             </field>
                                             <field name="value">
                                                 <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_merge-bibl</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>true()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_merge-holdings</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>true()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -8605,7 +9072,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>bibliographic data: convert &lt;bibl> to &lt;biblStruct></String>
+                                    <String>authority files(s): convert TEI to QuickStatements (Wikidata)</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -8623,7 +9090,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/../convert_tei-to-bibliographic-data/xslt/convert_tei-to-biblstruct_bibl.xsl</String>
+                                    <String>${pdu}/../../OpenArabicPE/convert_tei-to-bibliographic-data/xslt/convert_tei-to-wikidata-import_file.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -8677,6 +9144,258 @@
                                                 <paramDescriptor>
                                                     <field name="localName">
                                                         <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_output-mode</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'qs'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>authority files(s): convert TEI to custom Wikidata XML</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../../OpenArabicPE/convert_tei-to-bibliographic-data/xslt/convert_tei-to-wikidata-import_file.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_output-mode</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String></String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
                                                     </field>
                                                     <field name="prefix">
                                                         <null/>
@@ -9133,162 +9852,6 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>bibliographic data: convert &lt;biblStruct> to custom Wikidata XML</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/../../OpenArabicPE/convert_tei-to-bibliographic-data/xslt/convert_tei-to-wikidata-import_file.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_debug</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>false()</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>true</Boolean>
-                                            </field>
-                                            <field name="isStatic">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_local-authority</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>'oape'</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>true</Boolean>
-                                            </field>
-                                            <field name="isStatic">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>p_verbose</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>false()</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>true</Boolean>
-                                            </field>
-                                            <field name="isStatic">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                    </list>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
                                     <String>bibliographic data: convert MARC XML to &lt;tei:biblStruct></String>
                                 </field>
                                 <field name="baseURL">
@@ -9361,6 +9924,54 @@
                                                 <paramDescriptor>
                                                     <field name="localName">
                                                         <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>true()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_stand-alone</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>true()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
                                                     </field>
                                                     <field name="prefix">
                                                         <null/>
@@ -9613,6 +10224,522 @@
                                     <null/>
                                 </field>
                                 <field name="name">
+                                    <String>bibliographic data: convert holdings from TEI to QuickStatements (Wikidata)</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../../OpenArabicPE/convert_tei-to-bibliographic-data/xslt/convert_tei-to-wikidata-import_file.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_output-mode</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'holdings-qs'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>bibliographic data: convert holdings from TEI to custom Wikidata XML</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../../OpenArabicPE/convert_tei-to-bibliographic-data/xslt/convert_tei-to-wikidata-import_file.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_output-mode</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'holdings'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>bibliographic data: convert/extract to standOff/listBibl/biblStruct</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../convert_tei-to-bibliographic-data/xslt/convert_tei-to-biblstruct_bibl.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_detect-language-from-title</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
                                     <String>bibliographic data: generate BibTeX - one file per article</String>
                                 </field>
                                 <field name="baseURL">
@@ -9679,7 +10806,32 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list/>
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_target-language</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'ar'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -9762,7 +10914,32 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list/>
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_target-language</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'ar'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -10002,6 +11179,30 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_target-language</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'ar'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
                                     </list>
                                 </field>
                                 <field name="cascadingStylesheets">
@@ -10038,6 +11239,138 @@
                                 </field>
                                 <field name="inputXSLURL">
                                     <String>${pdu}/../convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_issues.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_target-language</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'ar'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>bibliographic data: generate MODS from fileDesc</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_filedesc.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -10811,6 +12144,114 @@
                                     <null/>
                                 </field>
                                 <field name="name">
+                                    <String>bibliographic data: generate biblStruct from fileDesc</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../convert_tei-to-bibliographic-data/xslt/convert_tei-to-biblstruct_filedesc.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
                                     <String>bibliographic data: post-process converted &lt;biblStruct> from Zotero export</String>
                                 </field>
                                 <field name="baseURL">
@@ -11000,7 +12441,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>false()</String>
+                                                <String>true()</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
@@ -11575,6 +13016,152 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
+                                    <serializableOrderedMap>
+                                        <entry>
+                                            <String>Saxon-EE</String>
+                                            <xsltSaxonBAdvancedOptions>
+                                                <field name="allowCallsOnExtensionFunctions">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="registerSaxonCEExtensions">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="enableAssertions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="allowSyntaxExtensions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="showVersionWarnings">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="dtdSourceValidation">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="dtdSourceValidationRecover">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="lineNumbering">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="initialMode">
+                                                    <null/>
+                                                </field>
+                                                <field name="initialTemplate">
+                                                    <null/>
+                                                </field>
+                                                <field name="traceXPathExpression">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="expandAttributeDefaults">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="stripWS">
+                                                    <String>saxon.strip.ws.none</String>
+                                                </field>
+                                                <field name="optimizationEnabled">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="useConfigFile">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="configSystemID">
+                                                    <null/>
+                                                </field>
+                                                <field name="initializer">
+                                                    <String></String>
+                                                </field>
+                                                <field name="profilingOutputFile">
+                                                    <null/>
+                                                </field>
+                                                <field name="isProfilingEnabled">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                            </xsltSaxonBAdvancedOptions>
+                                        </entry>
+                                    </serializableOrderedMap>
+                                </field>
+                                <field name="name">
+                                    <String>convert: hOCR to TEI</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>/Users/Shared/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_tools/xslt/convert_hocr-to-tei.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/r-to-tei/${cfn}.TEIP5.xml</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
                                     <null/>
                                 </field>
                                 <field name="name">
@@ -11693,7 +13280,114 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>true()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
                                     </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>deprecated: authority file(s): improve holdings in bibliography</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../authority-files/xslt/tei-biblstruct_correct-holdings.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/holdings_improved/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -11892,6 +13586,54 @@
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_hathi-id</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'hvd.32044093672442'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_image-setoff_hathi</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>20</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
                                             </field>
                                             <field name="isStatic">
                                                 <Boolean>false</Boolean>
@@ -13174,7 +14916,163 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>remove automated mark-up</String>
+                                    <String>remove: &lt;lb/></String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../journal_al-manar/xslt/tei_remove-lb.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/removed_lb/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_local-authority</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>'oape'</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_verbose</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>remove: automated mark-up</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -13296,6 +15194,89 @@
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>remove: unreferenced changes</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../authority-files/xslt/tei-revisionDesc_remove-unreferenced-changes.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/revisionDesc_clean/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-HE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -13553,6 +15534,89 @@
                                             </field>
                                         </transformationParameter>
                                     </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>utility: post-process</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/../authority-files/xslt/post-process.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfd}/_output/post-processed/${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -13869,6 +15933,10 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>xsltproc.no.dtd.attr.on</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>xsltproc.xinclude.on</String>
                         <Boolean>false</Boolean>
                     </entry>
@@ -13923,6 +15991,7 @@
             <folder path="../mods-boilerplate/"/>
             <folder path="../tei-boilerplate-arabic-editions/"/>
         </folder>
+        <folder path="../../Methodenlabor/data_dhd/tei/"/>
         <folder path="../../Sihafa/Sihafa/"/>
     </projectTree>
 </project>

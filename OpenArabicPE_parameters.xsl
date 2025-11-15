@@ -19,7 +19,8 @@
     <xsl:param name="p_today-iso" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
     
     <!-- toggle debugging (not available in all stylesheets) -->
-    <xsl:param name="p_verbose" select="false()"/>
+    <xsl:param name="p_verbose" select="true()"/>
+    <xsl:param name="p_debug" select="true()"/>
     
     <!-- generate an id for the most recent change -->
     <xsl:param name="p_id-change" select="generate-id(//tei:revisionDesc[1]/tei:change[last()])"/>
